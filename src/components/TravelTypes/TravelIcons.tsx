@@ -1,5 +1,4 @@
 import { Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
-
 interface TravelIconsProps {
   text: string;
   icon: string;
