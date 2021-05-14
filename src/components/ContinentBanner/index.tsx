@@ -16,7 +16,7 @@ const ContinentBanner = () => {
     >
       <Heading
         textAlign={["center", "left"]}
-        fontSize={["8xl", "5xl"]}
+        fontSize={["6xl", "5xl"]}
         color="gray.100"
         fontWeight="500"
       >
