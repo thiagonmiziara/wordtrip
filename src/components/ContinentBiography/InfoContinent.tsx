@@ -1,16 +1,4 @@
-import {
-  Flex,
-  Heading,
-  Icon,
-  Popover,
-  PopoverArrow,
-  PopoverBody,
-  PopoverCloseButton,
-  PopoverContent,
-  PopoverTrigger,
-  Text,
-} from "@chakra-ui/react";
-import { RiInformationLine } from "react-icons/ri";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 import ChakraPopoverComponent from "./ChakraPopoverComponent";
 
 const InfoContinent = () => {
@@ -50,6 +38,7 @@ const InfoContinent = () => {
         </Heading>
         <Text fontSize={["md", "xl"]} fontWeight="600" color="gray.700">
           cidades +100
+          
           <ChakraPopoverComponent />
         </Text>
       </Flex>

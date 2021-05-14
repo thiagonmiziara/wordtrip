@@ -1,0 +1,33 @@
+[
+  {
+  "city":"Londres",
+  "country":"Reino Unido",
+  "flag": "/flagRunido.png",
+  "banner": "/londres.png"
+},
+{
+  "city":"Paris",
+  "country":"França",
+  "flag": "/flagFranca.png",
+  "banner": "/paris.png"
+},
+{
+  "city":"Roma",
+  "country":"Itália",
+  "flag": "/flagRoma.png",
+  "banner": "/roma.png"
+},
+{
+  "city":"Praga",
+  "country":"Replúbica Tcheca",
+  "flag": "/flagRtheca.png",
+  "banner": "/roma.png"
+},
+{
+  "city":"Amsterdã",
+  "country":"Holanda",
+  "flag": "/flagHolanda.png",
+  "banner": "/amsterda.png"
+}
+
+]
