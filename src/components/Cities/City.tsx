@@ -13,7 +13,7 @@ const City = () => {
               <Image
                 src={`${city.banner}`}
                 alt={`${city.country}`}
-                h="170px"
+                h="200px"
                 W="100%"
               />
               <Flex

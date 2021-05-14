@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="./public/readme.png" alt="Worldtrip" />
+  <img src="./public/wordtrip.gif" alt="Worldtrip" />
 
   &#xa0;
 
