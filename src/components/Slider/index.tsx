@@ -1,10 +1,8 @@
 import Link from "next/link";
-
 import { Flex, Heading, Text } from "@chakra-ui/react";
 
-import SwiperCore, { Navigation, Pagination, A11y } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-SwiperCore.use([Navigation, Pagination, A11y]);
+import SwiperComponent from "./SwiperComponent";
+
 
 const Slider = () => {
   return (
@@ -15,15 +13,8 @@ const Slider = () => {
       mb={["5", "10"]}
       h={["250px", "450px"]}
     >
-      <Swiper
-        slidesPerView={1}
-        navigation
-        pagination={{clickable: true}}
-        autoplay={{ delay: 4000 }}
-        style={{ width: "100%", flex: "1" }}
-      >
-        <SwiperSlide>
-          <Flex
+      <SwiperComponent>
+      <Flex
             w="100%"
             h="100%"
             align="center"
@@ -51,52 +42,8 @@ const Slider = () => {
               </a>
             </Link>
           </Flex>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <Flex
-            w="100%"
-            h="100%"
-            align="center"
-            justify="center"
-            direction="column"
-            bgImage="url(/continent.png)"
-            bgSize="cover"
-            bgRepeat="no-repeat"
-            textAlign="center"
-            bgPosition="center"
-          >
-            <Link href="/continent/europe">
-              <a>
-                <Heading>Europa</Heading>
-                <Text>O continent mais antigo.</Text>
-              </a>
-            </Link>
-          </Flex>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <Flex
-            w="100%"
-            h="100%"
-            align="center"
-            justify="center"
-            direction="column"
-            bgImage="url(/continent.png)"
-            bgSize="cover"
-            bgRepeat="no-repeat"
-            textAlign="center"
-            bgPosition="center"
-          >
-            <Link href="/continent/europe">
-              <a>
-                <Heading>Europa</Heading>
-                <Text>O continent mais antigo.</Text>
-              </a>
-            </Link>
-          </Flex>
-        </SwiperSlide>
-      </Swiper>
+      </SwiperComponent>
+       
     </Flex>
   );
 };
