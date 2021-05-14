@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import DivideLine from "../components/DividerLine/Index";
 
 import Header from "../components/Header"
+import Slider from "../components/Slider";
 import TravelTypes from "../components/TravelTypes";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
      <Banner/>
      <TravelTypes/>
      <DivideLine/>
+     <Slider/>
    </Flex>
   );
 }
