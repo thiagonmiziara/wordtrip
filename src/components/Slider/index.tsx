@@ -1,52 +1,43 @@
 import Link from "next/link";
 import { Flex, Heading, Text } from "@chakra-ui/react";
 
-import SwiperComponent from "./SwiperComponent";
+import SwiperCore, { Navigation, Pagination, A11y } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import ContentSlider from "./ContentSlider";
+SwiperCore.use([Navigation, Pagination, A11y]);
 
 const Slider = () => {
   return (
-    <Flex
-      w="100%"
-      maxW="1240px"
-      mx="auto"
-      mb={["5", "10"]}
-      h={["250px", "450px"]}
-    >
-      <SwiperComponent>
-        <Flex
-          w="100%"
-          h="100%"
-          align="center"
-          justify="center"
-          direction="column"
-          bgImage="url(/continent.png)"
-          bgSize="cover"
-          bgRepeat="no-repeat"
-          textAlign="center"
-          bgPosition="center"
+    <>
+      <Flex
+        w="100%"
+        maxW="1240px"
+        mx="auto"
+        mb={["5", "10"]}
+        h={["250px", "450px"]}
+      >
+        <Swiper
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 4000 }}
+          style={{ width: "100%", flex: "1" }}
         >
-          <Link href="/continent/europe">
-            <a>
-              <Heading
-                fontSize={["3xl", "4xl", "5xl"]}
-                color="gray.100"
-                fontWeight="bold"
-              >
-                Europa
-              </Heading>
-              <Text
-                fontWeight="bold"
-                color="gray.300"
-                fontSize={[".8rem", "1xl", "2xl"]}
-                mt={["2", "4"]}
-              >
-                O continent mais antigo.
-              </Text>
-            </a>
-          </Link>
-        </Flex>
-      </SwiperComponent>
-    </Flex>
+          <SwiperSlide>
+           <ContentSlider/>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <ContentSlider/>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <ContentSlider/>
+          </SwiperSlide>
+          
+        </Swiper>
+      </Flex>
+    </>
   );
 };
 
